@@ -60,24 +60,7 @@ bot.on('ready', function(){
 })
 
 bot.on('message', function (message){
-        message.channel.send('Gotto is watching you : "Vous me dégoûtez." :expressionless: ')
-        if (sender === 'Bakann')
-             Bakann++
-        if (sender === 'retard')
-             retard++
-        if (sender === 'Kami-Sensei')
-                    KamiSensei++
-        if (sender === 'Kaizuko-Inaha')
-                    KaizukoInaha++
-        if (sender === 'Kant')
-                    Kant++
-        if (sender === 'bidolo1')
-                    bidolo1++
-        if (sender === 'lard fumé')
-                    lardfumé++
-
-        return
-    }
+    var sender = message.author.username
     var str = message.content
     var words = str.split(' ')
     for (var a = 0; a < 30 ; a++){
