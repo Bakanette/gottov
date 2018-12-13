@@ -123,20 +123,34 @@ bot.on('message', function (message){
         if (sender === 'lard fumé')
                     message.channel.send(lardfumé)
     }
-    if (str === '!stats Bakann')
+    if (str === '!stats Bakann'){
+        message.channel.send('Points de saletés : ')
         message.channel.send(Bakann)
-    if (str === '!stats retard')
+    }
+    if (str === '!stats retard'){
+                                        message.channel.send('Points de saletés : ')
         message.channel.send(retard)
-    if (str === '!stats Kami-Sensei')
+        }
+    if (str === '!stats Kami-Sensei'){
+                                             message.channel.send('Points de saletés : ')
         message.channel.send(KamiSensei)
-    if (str === '!stats Kaizuko-Inaha')
+        }
+    if (str === '!stats Kaizuko-Inaha'){
+                                               message.channel.send('Points de saletés : ')
         message.channel.send(KaizukoInaha)
-    if (str === '!stats Kant')
+        }
+    if (str === '!stats Kant'){
+                                      message.channel.send('Points de saletés : ')
         message.channel.send(Kant)
-    if (str === '!stats bidolo1')
+        }
+    if (str === '!stats bidolo1'){
+                                         message.channel.send('Points de saletés : ')
         message.channel.send(bidolo1)
-    if (str === '!stats lard fumé')
+        }
+    if (str === '!stats lard fumé'){
+                                           message.channel.send('Points de saletés : ')
         message.channel.send(lardfumé)
+        }
 })
 
 bot.login(process.env.TOKEN)
