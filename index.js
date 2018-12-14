@@ -130,7 +130,6 @@ var banword = ['mouillé',
               'fraîche',
               'chaud bouillant',
               'Pyper',
-              'pyper america',
               'hentai',
               'porno',
               'pornographique',
@@ -138,10 +137,9 @@ var banword = ['mouillé',
               'sale',
               'salasse',
               'saleté',
-              'petite salope',
               'salope',
               'salement',
-              'se laver',
+              'laver',
               'savon',
               'liquide',
               'blanc',
@@ -186,7 +184,7 @@ bot.on('message', function (message){
 
                                 return
             }
-            if ((words[a] === 'Ruby' && words[a+1] === 'Rose') || (words[a] === 'X' && words[a+1] === 'D') ){
+            if ((words[a] === 'Ruby' && words[a+1] === 'Rose') || (words[a] === 'X' && words[a+1] === 'D') || (words[a] === 'petite' && words[a+1] === 'salope') || (words[a] === 'pyper' && words[a+1] === 'america')){
                 message.channel.send('Gotto is watching you : "Vous me dégoûtez." :expressionless: ')
                 if (sender === 'Bakann')
                      Bakann++
