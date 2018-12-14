@@ -164,7 +164,7 @@ bot.on('message', function (message){
     var str = message.content
     var words = str.split(' ')
     for (var a = 0; a < 30 ; a++){
-        for (var i = 0; i < 46 ; i++){
+        for (var i = 0; i < 140 ; i++){
             if (words[a] === banword[i]) {
                 message.channel.send('Gotto is watching you : "Vous me dégoûtez." :expressionless: ')
                  if (sender === 'Bakann')
