@@ -164,7 +164,7 @@ bot.on('message', function (message){
     var str = message.content
     var words = str.split(' ')
     for (var a = 0; a < 30 ; a++){
-        for (var i = 0; i < 141 ; i++){
+        for (var i = 0; i < 140 ; i++){
             if (words[a] === banword[i]) {
                 message.channel.send('Gotto is watching you : "Vous me dégoûtez." :expressionless: ')
                  if (sender === 'Bakann')
@@ -248,47 +248,40 @@ bot.on('message', function (message){
 
     if (str === '!stats'){
         if (sender === 'Bakann')
-            message.channel.send(Bakann)
+            message.channel.send(('Point de saletés : ') + Bakann)
         if (sender === 'retard')
-            message.channel.send(retard)
+            message.channel.send(('Point de saletés : ') + retard)
         if (sender === 'Kami-Sensei')
-                    message.channel.send(KamiSensei)
+                    message.channel.send(('Point de saletés : ') + KamiSensei)
         if (sender === 'Kaizuko-Inaha')
-                    message.channel.send(KaizukoInaha)
+                    message.channel.send(('Point de saletés : ') + KaizukoInaha)
         if (sender === 'Kant')
-                    message.channel.send(Kant)
+                    message.channel.send(('Point de saletés : ') + Kant)
         if (sender === 'bidolo1')
-                    message.channel.send(bidolo1)
+                    message.channel.send(('Point de saletés : ') + bidolo1)
         if (sender === 'lard fumé')
-                    message.channel.send(lardfumé)
+                    message.channel.send(('Point de saletés : ') + lardfumé)
     }
     if (str === '!stats Bakann'){
-        message.channel.send('Points de saletés : ')
-        message.channel.send(Bakann)
+        message.channel.send(('Point de saletés : ') + Bakann)
     }
     if (str === '!stats retard'){
-                                        message.channel.send('Points de saletés : ')
-        message.channel.send(retard)
+        message.channel.send(('Point de saletés : ') + retard)
         }
     if (str === '!stats Kami-Sensei'){
-                                             message.channel.send('Points de saletés : ')
-        message.channel.send(KamiSensei)
+        message.channel.send(('Point de saletés : ') + KamiSensei)
         }
     if (str === '!stats Kaizuko-Inaha'){
-                                               message.channel.send('Points de saletés : ')
-        message.channel.send(KaizukoInaha)
+        message.channel.send(('Point de saletés : ') + KaizukoInaha)
         }
     if (str === '!stats Kant'){
-                                      message.channel.send('Points de saletés : ')
-        message.channel.send(Kant)
+        message.channel.send(('Point de saletés : ') + Kant)
         }
     if (str === '!stats bidolo1'){
-                                         message.channel.send('Points de saletés : ')
-        message.channel.send(bidolo1)
+        message.channel.send(('Point de saletés : ') + bidolo1)
         }
     if (str === '!stats lard fumé'){
-                                           message.channel.send('Points de saletés : ')
-        message.channel.send(lardfumé)
+        message.channel.send(('Point de saletés : ') + lardfumé)
         }
 
 
