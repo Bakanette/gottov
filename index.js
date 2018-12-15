@@ -167,22 +167,21 @@ bot.on('message', function (message){
         for (var i = 0; i < 140 ; i++){
             if (words[a] === banword[i]) {
                 message.channel.send('Gotto is watching you : "Vous me dégoûtez." :expressionless: ')
-                 if (sender === 'Bakann')
-                                     Bakann++
-                                if (sender === 'retard')
-                                     retard++
-                                if (sender === 'Kami-Sensei')
-                                            KamiSensei++
-                                if (sender === 'Kaizuko-Inaha')
-                                            KaizukoInaha++
-                                if (sender === 'Kant')
-                                            Kant++
-                                if (sender === 'bidolo1')
-                                            bidolo1++
-                                if (sender === 'lard fumé')
-                                            lardfumé++
-
-                                return
+            if (sender === 'Bakann')
+                 Bakann++
+            if (sender === 'retard')
+                 retard++
+            if (sender === 'Kami-Sensei')
+                        KamiSensei++
+            if (sender === 'Kaizuko-Inaha')
+                        KaizukoInaha++
+            if (sender === 'Kant')
+                        Kant++
+            if (sender === 'bidolo1')
+                        bidolo1++
+            if (sender === 'lard fumé')
+                        lardfumé++
+            return
             }
             if ((words[a] === 'Ruby' && words[a+1] === 'Rose') || (words[a] === 'X' && words[a+1] === 'D') || (words[a] === 'petite' && words[a+1] === 'salope') || (words[a] === 'pyper' && words[a+1] === 'america')){
                 message.channel.send('Gotto is watching you : "Vous me dégoûtez." :expressionless: ')
@@ -200,7 +199,6 @@ bot.on('message', function (message){
                             bidolo1++
                 if (sender === 'lard fumé')
                             lardfumé++
-
                 return
             }
         }
@@ -212,75 +210,75 @@ bot.on('message', function (message){
         if (sender === 'Bakann'){
             pourcent = 0
             pourcent = (Bakann/total)*100
-            message.channel.send(Number.parseFloat(pourcent).toFixed(0) + '%')
+            message.channel.send('Bakann est corrompu à : '+ Number.parseFloat(pourcent).toFixed(0) + '%')
         }
         if (sender === 'lard fumé'){
-                    pourcent = 0
-                    pourcent = (lardfumé/total)*100
-                    message.channel.send(Number.parseFloat(pourcent).toFixed(0) + '%')
-                }
-                if (sender === 'bidolo1'){
-                            pourcent = 0
-                            pourcent = (bidolo1/total)*100
-                            message.channel.send(Number.parseFloat(pourcent).toFixed(0) + '%')
-                        }
-                        if (sender === 'Kami-Sensei'){
-                                    pourcent = 0
-                                    pourcent = (KamiSensei/total)*100
-                                    message.channel.send(Number.parseFloat(pourcent).toFixed(0) + '%')
-                                }
-                                if (sender === 'retard'){
-                                            pourcent = 0
-                                            pourcent = (retard/total)*100
-                                            message.channel.send(Number.parseFloat(pourcent).toFixed(0) + '%')
-                                        }
-                                        if (sender === 'Kant'){
-                                                    pourcent = 0
-                                                    pourcent = (Kant/total)*100
-                                                    message.channel.send(Number.parseFloat(pourcent).toFixed(0) + '%')
-                                                }
-                                                if (sender === 'Kaizuko-Inaha'){
-                                                            pourcent = 0
-                                                            pourcent = (KaizukoInaha/total)*100
-                                                            message.channel.send(Number.parseFloat(pourcent).toFixed(0) + '%')
-                                                        }
+            pourcent = 0
+            pourcent = (lardfumé/total)*100
+            message.channel.send('lard fumé est corrompu à : '+ Number.parseFloat(pourcent).toFixed(0) + '%')
+        }
+        if (sender === 'bidolo1'){
+            pourcent = 0
+            pourcent = (bidolo1/total)*100
+            message.channel.send('bidolo1 est corrompu à : '+ Number.parseFloat(pourcent).toFixed(0) + '%')
+        }
+        if (sender === 'Kami-Sensei'){
+            pourcent = 0
+            pourcent = (KamiSensei/total)*100
+            message.channel.send('Kami-Sensei est corrompu à : '+ Number.parseFloat(pourcent).toFixed(0) + '%')
+        }
+        if (sender === 'retard'){
+            pourcent = 0
+            pourcent = (retard/total)*100
+            message.channel.send('retard est corrompu à : '+ Number.parseFloat(pourcent).toFixed(0) + '%')
+        }
+        if (sender === 'Kant'){
+            pourcent = 0
+            pourcent = (Kant/total)*100
+            message.channel.send('Kant est corrompu à : '+ Number.parseFloat(pourcent).toFixed(0) + '%')
+        }
+        if (sender === 'Kaizuko-Inaha'){
+            pourcent = 0
+            pourcent = (KaizukoInaha/total)*100
+            message.channel.send('Kaizuko-Inaha est corrompu à : '+ Number.parseFloat(pourcent).toFixed(0) + '%')
+        }
     }
 
     if (str === '!% Bakann'){
                 pourcent = 0
                 pourcent = (Bakann/total)*100
                 message.channel.send('Bakann est corrompu à : '+ Number.parseFloat(pourcent).toFixed(0) + '%')
-            }
-            if (str === '!% Kaizuko-Inaha'){
-                            pourcent = 0
-                            pourcent = (KaizukoInaha/total)*100
-                            message.channel.send('Kaizuko-Inaha est corrompu à : '+ Number.parseFloat(pourcent).toFixed(0) + '%')
-                        }
-                        if (str === '!% Kant'){
-                                        pourcent = 0
-                                        pourcent = (Kant/total)*100
-                                        message.channel.send('Kant est corrompu à : '+ Number.parseFloat(pourcent).toFixed(0) + '%')
-                                    }
-                                    if (str === '!% retard'){
-                                                    pourcent = 0
-                                                    pourcent = (retard/total)*100
-                                                    message.channel.send('retard est corrompu à : '+ Number.parseFloat(pourcent).toFixed(0) + '%')
-                                                }
-                                                if (str === '!% Kami-Sensei'){
-                                                                pourcent = 0
-                                                                pourcent = (KamiSensei/total)*100
-                                                                message.channel.send('Kami-Sensei est corrompu à : '+ Number.parseFloat(pourcent).toFixed(0) + '%')
-                                                            }
-                                                            if (str === '!% bidolo1'){
-                                                                            pourcent = 0
-                                                                            pourcent = (bidolo1/total)*100
-                                                                            message.channel.send('bidolo1 est corrompu à : '+ Number.parseFloat(pourcent).toFixed(0) + '%')
-                                                                        }
-                                                                        if (str === '!% lard fumé'){
-                                                                                        pourcent = 0
-                                                                                        pourcent = (lardfumé/total)*100
-                                                                                        message.channel.send('lard fumé est corrompu à : '+ Number.parseFloat(pourcent).toFixed(0) + '%')
-                                                                                    }
+    }
+    if (str === '!% Kaizuko-Inaha'){
+                pourcent = 0
+                pourcent = (KaizukoInaha/total)*100
+                message.channel.send('Kaizuko-Inaha est corrompu à : '+ Number.parseFloat(pourcent).toFixed(0) + '%')
+    }
+    if (str === '!% Kant'){
+        pourcent = 0
+        pourcent = (Kant/total)*100
+        message.channel.send('Kant est corrompu à : '+ Number.parseFloat(pourcent).toFixed(0) + '%')
+    }
+    if (str === '!% retard'){
+        pourcent = 0
+        pourcent = (retard/total)*100
+        message.channel.send('retard est corrompu à : '+ Number.parseFloat(pourcent).toFixed(0) + '%')
+    }
+    if (str === '!% Kami-Sensei'){
+        pourcent = 0
+        pourcent = (KamiSensei/total)*100
+        message.channel.send('Kami-Sensei est corrompu à : '+ Number.parseFloat(pourcent).toFixed(0) + '%')
+    }
+    if (str === '!% bidolo1'){
+        pourcent = 0
+        pourcent = (bidolo1/total)*100
+        message.channel.send('bidolo1 est corrompu à : '+ Number.parseFloat(pourcent).toFixed(0) + '%')
+    }
+    if (str === '!% lard fumé'){
+        pourcent = 0
+        pourcent = (lardfumé/total)*100
+        message.channel.send('lard fumé est corrompu à : '+ Number.parseFloat(pourcent).toFixed(0) + '%')
+    }
 
     if (str === '!stats'){
         if (sender === 'Bakann')
@@ -329,4 +327,4 @@ bot.on('message', function (message){
 
 })
 
-bot.login(process.env.TOKEN)
+bot.login(process.env.TOKEN
