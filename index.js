@@ -249,37 +249,37 @@ bot.on('message', function (message){
     if (str === '!% Bakann'){
                 pourcent = 0
                 pourcent = (Bakann/total)*100
-                message.channel.send('Bakann est corrompu à : Number.parseFloat(pourcent).toFixed(0) + '%')
+                message.channel.send('Bakann est corrompu à : '+ Number.parseFloat(pourcent).toFixed(0) + '%')
             }
             if (str === '!% Kaizuko-Inaha'){
                             pourcent = 0
-                            pourcent = (Kaizuko-Inaha/total)*100
-                            message.channel.send('Kaizuko-Inaha est corrompu à : Number.parseFloat(pourcent).toFixed(0) + '%')
+                            pourcent = (KaizukoInaha/total)*100
+                            message.channel.send('Kaizuko-Inaha est corrompu à : '+ Number.parseFloat(pourcent).toFixed(0) + '%')
                         }
                         if (str === '!% Kant'){
                                         pourcent = 0
                                         pourcent = (Kant/total)*100
-                                        message.channel.send('Kant est corrompu à : Number.parseFloat(pourcent).toFixed(0) + '%')
+                                        message.channel.send('Kant est corrompu à : '+ Number.parseFloat(pourcent).toFixed(0) + '%')
                                     }
                                     if (str === '!% retard'){
                                                     pourcent = 0
                                                     pourcent = (retard/total)*100
-                                                    message.channel.send('retard est corrompu à : Number.parseFloat(pourcent).toFixed(0) + '%')
+                                                    message.channel.send('retard est corrompu à : '+ Number.parseFloat(pourcent).toFixed(0) + '%')
                                                 }
                                                 if (str === '!% Kami-Sensei'){
                                                                 pourcent = 0
-                                                                pourcent = (Kami-Sensei/total)*100
-                                                                message.channel.send('Kami-Sensei est corrompu à : Number.parseFloat(pourcent).toFixed(0) + '%')
+                                                                pourcent = (KamiSensei/total)*100
+                                                                message.channel.send('Kami-Sensei est corrompu à : '+ Number.parseFloat(pourcent).toFixed(0) + '%')
                                                             }
                                                             if (str === '!% bidolo1'){
                                                                             pourcent = 0
                                                                             pourcent = (bidolo1/total)*100
-                                                                            message.channel.send('bidolo1 est corrompu à : Number.parseFloat(pourcent).toFixed(0) + '%')
+                                                                            message.channel.send('bidolo1 est corrompu à : '+ Number.parseFloat(pourcent).toFixed(0) + '%')
                                                                         }
                                                                         if (str === '!% lard fumé'){
                                                                                         pourcent = 0
-                                                                                        pourcent = (lard fumé/total)*100
-                                                                                        message.channel.send('lard fumé est corrompu à : Number.parseFloat(pourcent).toFixed(0) + '%')
+                                                                                        pourcent = (lardfumé/total)*100
+                                                                                        message.channel.send('lard fumé est corrompu à : '+ Number.parseFloat(pourcent).toFixed(0) + '%')
                                                                                     }
 
     if (str === '!stats'){
