@@ -327,4 +327,4 @@ bot.on('message', function (message){
 
 })
 
-bot.login(procesS.env.TOKEN)
+bot.login(process.env.TOKEN)
