@@ -212,37 +212,37 @@ bot.on('message', function (message){
         if (sender === 'Bakann'){
             pourcent = 0
             pourcent = (Bakann/total)*100
-            message.channel.send(pourcent+'%')
+            message.channel.send(Number.parseFloat(pourcent).toFixed(0) + '%')
         }
         if (sender === 'lard fumé'){
                     pourcent = 0
                     pourcent = (lardfumé/total)*100
-                    message.channel.send(pourcent+'%')
+                    message.channel.send(Number.parseFloat(pourcent).toFixed(0) + '%')
                 }
                 if (sender === 'bidolo1'){
                             pourcent = 0
                             pourcent = (bidolo1/total)*100
-                            message.channel.send(pourcent+'%')
+                            message.channel.send(Number.parseFloat(pourcent).toFixed(0) + '%')
                         }
                         if (sender === 'Kami-Sensei'){
                                     pourcent = 0
                                     pourcent = (KamiSensei/total)*100
-                                    message.channel.send(pourcent+'%')
+                                    message.channel.send(Number.parseFloat(pourcent).toFixed(0) + '%')
                                 }
                                 if (sender === 'retard'){
                                             pourcent = 0
                                             pourcent = (retard/total)*100
-                                            message.channel.send(pourcent+'%')
+                                            message.channel.send(Number.parseFloat(pourcent).toFixed(0) + '%')
                                         }
                                         if (sender === 'Kant'){
                                                     pourcent = 0
                                                     pourcent = (Kant/total)*100
-                                                    message.channel.send(pourcent+'%')
+                                                    message.channel.send(Number.parseFloat(pourcent).toFixed(0) + '%')
                                                 }
                                                 if (sender === 'Kaizuko-Inaha'){
                                                             pourcent = 0
                                                             pourcent = (KaizukoInaha/total)*100
-                                                            message.channel.send(pourcent+'%')
+                                                            message.channel.send(Number.parseFloat(pourcent).toFixed(0) + '%')
                                                         }
     }
 
