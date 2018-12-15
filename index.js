@@ -183,7 +183,7 @@ bot.on('message', function (message){
                         lardfumé++
             return
             }
-            if ((words[a] === 'Ruby' && words[a+1] === 'Rose') || (words[a] === 'X' && words[a+1] === 'D') || (words[a] === 'petite' && words[a+1] === 'salope') || (words[a] === 'pyper' && words[a+1] === 'america')) || (words[a] === 'Vlad' && words[a+1] === 'x' && words[a+2] === 'Vince')){
+            if ((words[a] === 'Ruby' && words[a+1] === 'Rose') || (words[a] === 'X' && words[a+1] === 'D') || (words[a] === 'petite' && words[a+1] === 'salope') || (words[a] === 'pyper' && words[a+1] === 'america') || (words[a] === 'Vlad' && words[a+1] === 'x' && words[a+2] === 'Vince')){
                 message.channel.send('Gotto is watching you : "Vous me dégoûtez." :expressionless: ')
                 if (sender === 'Bakann')
                      Bakann++
@@ -327,4 +327,4 @@ bot.on('message', function (message){
 
 })
 
-bot.login(process.env.TOKEN)
+bot.login(procesS.env.TOKEN)
