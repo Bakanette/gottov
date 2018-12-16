@@ -10,6 +10,7 @@ var KamiSensei = 0
 var KaizukoInaha = 0
 var total = 0
 var pourcent = 0
+var moyenne = 0
 
 var banword = ['mouillé',
               'mouillée',
@@ -128,7 +129,6 @@ var banword = ['mouillé',
               'chaude',
               'fraiche',
               'fraîche',
-              'chaud bouillant',
               'Pyper',
               'hentai',
               'porno',
@@ -183,7 +183,7 @@ bot.on('message', function (message){
                         lardfumé++
             return
             }
-            if ((words[a] === 'Ruby' && words[a+1] === 'Rose') || (words[a] === 'X' && words[a+1] === 'D') || (words[a] === 'petite' && words[a+1] === 'salope') || (words[a] === 'pyper' && words[a+1] === 'america') || (words[a] === 'Vlad' && words[a+1] === 'x' && words[a+2] === 'Vince')){
+            if ((words[a] === 'Ruby' && words[a+1] === 'Rose') || (words[a] === 'X' && words[a+1] === 'D') || (words[a] === 'petite' && words[a+1] === 'salope') || (words[a] === 'pyper' && words[a+1] === 'america') || (words[a] === 'Vlad' && words[a+1] === 'x' && words[a+2] === 'Vince') || (words[a] === 'chaud' && words[a+1] === 'bouillant') || (words[a] === 'pere' && words[a+1] === 'noel')){
                 message.channel.send('Gotto is watching you : "Vous me dégoûtez." :expressionless: ')
                 if (sender === 'Bakann')
                      Bakann++
@@ -205,6 +205,12 @@ bot.on('message', function (message){
     }
 
     total = Bakann + retard + KamiSensei + KaizukoInaha + lardfumé + Kant + bidolo1
+
+    if (str === '!moy'){
+        moyenne = 0
+        moyenne = total/7
+        message.channel.send('Nombre de point saletés moyen : '+ Number.parseFloat(moyenne).toFixed(0))
+    }
 
     if (str === '!%'){
         if (sender === 'Bakann'){
