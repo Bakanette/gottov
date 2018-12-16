@@ -209,7 +209,7 @@ bot.on('message', function (message){
     if (str === '!moy'){
         moyenne = 0
         moyenne = total/7
-        message.channel.send('Nombre de point saletés moyen : '+ Number.parseFloat(moyenne).toFixed(0))
+        message.channel.send('Nombre de point saletés moyen : '+ Number.parseFloat(moyenne).toFixed(2))
     }
 
     if (str === '!%'){
