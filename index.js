@@ -206,7 +206,7 @@ bot.on('message', function (message){
 
     total = Bakann + retard + KamiSensei + KaizukoInaha + lardfumé + Kant + bidolo1
   
-    if (str === '!rank'){
+    /* if (str === '!rank'){
         if (Bakann > retard){
             var ranka = Bakann
             var rankf = retard 
@@ -270,7 +270,7 @@ bot.on('message', function (message){
          message.channel.send('4 : ' + rankj)
          message.channel.send('5 : ' + rankk)
          message.channel.send('6 : ' + rankl)
-    }
+    } */
 
     if (str === '!moy'){
         moyenne = 0
