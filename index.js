@@ -205,6 +205,72 @@ bot.on('message', function (message){
     }
 
     total = Bakann + retard + KamiSensei + KaizukoInaha + lardfumé + Kant + bidolo1
+  
+    if (str === '!rank'){
+        if (Bakann > retard){
+            var ranka = Bakann
+            var rankf = retard 
+        else var ranka = retard
+             var rankf = Bakann
+        }
+        
+        if (KaizukoInaha > lardfumé){
+            var rankb = KaizukoInaha
+            var rankg = lardfumé
+        else var rankb = lardfumé
+             var rankg = KaizukoInaha
+        }
+      
+        if (Kant > bidolo1){
+            var rankc = Kant
+            var rankh = bidolo1
+        else var rankc = bidolo1
+             var rankh = Kant
+        }
+      
+        if (ranka > rankb){
+            var rankd = ranka
+            var rankm = rankb
+        else var rankd = rankb
+             var rankm = ranka
+        }
+        
+        if (rankd > rankc){
+            var ranke = rankd
+            var rankn = rankc
+        else var ranke = rankc
+             var rankn = rankd
+        }
+      
+        if (rankn > rankm){
+          var ranko = rankn
+          var rankp = rankm
+          else var ranko = rankm
+               var rankp = rankn
+        }
+      
+        if (rankf > rankg){
+          var ranki = rankf
+          var rankl = rankg
+          else var ranki = rankg
+               var rankl = rankf
+        }
+        
+        if (ranki > rankh){
+          var rankj = ranki
+          var rankk = rankh
+          else var rankj = rankh
+               var rankk = ranki
+        }
+          
+         message.channel.send('Classement de saleté :')
+         message.channel.send('1 : ' + ranke)
+         message.channel.send('2 : ' + ranko)
+         message.channel.send('3 : ' + rankp)
+         message.channel.send('4 : ' + rankj)
+         message.channel.send('5 : ' + rankk)
+         message.channel.send('6 : ' + rankl)
+    }
 
     if (str === '!moy'){
         moyenne = 0
